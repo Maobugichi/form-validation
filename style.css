@@ -30,7 +30,7 @@ main {
 form {
  width: 70%;
  background-color: hsl(0, 0%, 100%);
- margin: auto;
+ margin: 20px auto;
  height: auto;
  min-height: 80%;
  border-radius: 10px;
