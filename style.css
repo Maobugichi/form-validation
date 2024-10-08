@@ -32,7 +32,7 @@ form {
  background-color: hsl(0, 0%, 100%);
  margin: auto;
  height: auto;
- min-height: 90%;
+ min-height: 80%;
  border-radius: 10px;
  display: flex;
  padding: 20px;
@@ -275,6 +275,7 @@ fieldset {
 
      form {
       width: 96%;
+      height: 85%;
      }
     
        .field {
