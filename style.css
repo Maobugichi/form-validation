@@ -14,7 +14,8 @@ body {
  font-style: normal;
  font-weight: 400;
  color:hsl(186, 15%, 59%);
- height: 230vh;
+ height: 200vh;
+ min-height: 160vh;
 }
 
 main {
@@ -26,7 +27,8 @@ form {
  width: 70%;
  background-color: hsl(0, 0%, 100%);
  margin: auto;
- height: 95%;
+ height: auto;
+ min-height: 95%;
  border-radius: 10px;
  display: flex;
  padding: 20px;
@@ -262,14 +264,7 @@ fieldset {
         width: 90%;
         margin: 30px auto;
      }
-    form {
-        width: 90%;
-        height: 155vh;
-        margin-left: 21px;
-        margin-top: 20px;
-       padding-bottom: 20px;
-       }
-       
+    
        .field {
         height: 95%;
         width: 100px;
