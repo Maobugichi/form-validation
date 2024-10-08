@@ -15,7 +15,11 @@ body {
  font-weight: 400;
  color:hsl(186, 15%, 59%);
  height: 130vh;
- 
+ overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 main {
@@ -251,6 +255,10 @@ fieldset {
 
 }
 @media (max-width:600px) and (min-width:350px) {
+    body {
+      height: 150vh;
+      min-height: 140vh;
+    }
     .animate {
         display: block;
         animation: showUp 1s ease-in-out;
@@ -263,6 +271,10 @@ fieldset {
      .success {
         width: 90%;
         margin: 30px auto;
+     }
+
+     form {
+      width: 90%;
      }
     
        .field {
