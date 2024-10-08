@@ -1,0 +1,387 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ background:hsl(148, 38%, 91%)  ; 
+ height: 150vh;
+ display: grid;
+ place-items: center;
+ gap: 10px;
+ font-family: "Karla", sans-serif;
+ font-optical-sizing: auto;
+ font-style: normal;
+ font-weight: 400;
+ color:hsl(186, 15%, 59%);
+ 
+}
+
+main {
+ overflow-x: hidden;
+ width: 100%;
+}
+
+form {
+ width: 70%;
+ background-color: hsl(0, 0%, 100%);
+ margin: auto;
+ height: 95%;
+ border-radius: 10px;
+ display: flex;
+ padding: 20px;
+align-items: center;
+}
+
+.success {
+ background-color: hsl(187, 24%, 22%);
+ width: 30%;
+ margin: auto;
+ padding: 20px;
+ border-radius: 10px;
+ display: none;
+}
+
+.sent {
+ display: flex;
+ align-items: center;
+ gap:10px;
+ color: #fff;
+ 
+}
+
+.animate {
+ display: block;
+ animation: showUp 1s ease-in-out;
+}
+
+@keyframes showUp {
+ from {transform: translateY(-100px);}
+ to {transform: translateY(30px); }
+}
+
+.deanimate {
+ animation: leaveScreen 1s ease-in-out;
+}
+
+@keyframes leaveScreen {
+    from {transform: translateY(30px);}
+    to {transform: translateY(-100px);}
+}
+.field {
+ border: none;
+ height: 100%;
+ padding: 20px;
+ width: 100% !important;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ gap: 10px;
+}
+
+.contact {
+ font-size: 25px;
+ font-weight: 700;
+ margin-left: 38px;
+ color: hsl(187, 24%, 22%);
+}
+
+label {
+ font-size: 16px;
+}
+
+.name-div {
+ display: flex;
+ width: 90%;
+ margin: auto;
+ display: flex;
+ gap: 20px;
+ 
+}
+
+.fName,.lName {
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+ gap: 10px;
+}
+
+
+.name-div input,.email-div input  {
+ height: 50px;
+ width: 100%;
+ border-radius: 8px;
+ border: 1px solid hsl(187, 24%, 22%);
+ cursor: pointer;
+}
+
+.name-div input:focus,.email-div input:focus  {
+ outline: 1px solid hsl(169, 85%, 38%);
+}
+   
+.name-div input:hover,.email-div input:hover  {
+    outline: 1px solid hsl(169, 85%, 38%);
+   }
+
+.email-div {
+ display: flex;
+ flex-direction: column;
+ width: 90%;
+ margin: auto;
+ gap: 10px;
+}
+
+.field2 {
+ display: flex;
+ width: 90%  !important;
+ margin: 20px auto;
+ gap: 5px;
+ border: none;
+ flex-direction: column;
+ justify-content: center;
+ height: 80px;
+}
+
+.rDiv-Flex {
+ width: 100%;
+ display: flex;
+ gap: 20px;
+}
+.field2 legend {
+ margin-bottom: 10px;
+}
+
+.rDiv {
+ height: 65px;
+ width: 50%;
+ border: 1px solid #333;
+ border-radius: 8px;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ 
+}
+
+.rDiv:hover {
+ border: 1px solid hsl(169, 85%, 38%);
+}
+
+input[type="radio"] {
+ width: 20px;
+ height: 30px;
+ margin-left: 30px;
+ accent-color:hsl(169, 82%, 27%) ;
+
+}
+.message {
+ width: 90%;
+ margin: 15px auto;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+.consent {
+ width: 90%;
+ margin: auto;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+
+}
+
+.ck {
+ display: flex;
+ gap: 5px;
+}
+input[type="checkbox"] {
+ accent-color: hsl(169, 82%, 27%);
+ width: 30px;
+ height: 18px;
+  }
+
+#message {
+ font-family: "Karla", sans-serif;
+ font-optical-sizing: auto;
+ font-style: normal;
+ font-weight: 400;
+ display: flex;
+ padding: 15px;
+ border-radius: 8px;
+}
+
+button {
+ width: 90%;
+ margin: auto;
+ height: 50px;
+ background-color:  hsl(169, 82%, 27%);
+ border: none;
+ border-radius: 6px;
+ font-size: 18px;
+ color: hsl(0, 0%, 100%);
+}
+
+.err-border {
+  border: 1px solid hsl(0, 66%, 54%)! important;
+}
+
+span {
+ display: none;
+}
+
+.block {
+ display: block;
+ color: hsl(0, 66%, 54%);
+}
+
+.inputChange {
+ background-color:hsl(148, 38%, 91%)  ;
+ border: 1.5px solid hsl(169, 85%, 38%);
+}
+
+
+input {
+ padding-left:20px;
+ font-size: 18px;
+}
+fieldset {
+    min-width: 0;
+
+}
+@media (max-width:600px) and (min-width:350px) {
+     .success {
+        width: 90%;
+        margin: auto;
+     }
+    form {
+        width: 90%;
+        height: 130vh;
+        margin-left: 25px;
+       }
+       
+       .field {
+        height: 100%;
+        width: 100px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+       
+       }
+       
+       .name-div {
+        flex-direction: column;
+       }
+
+       .name-div input {
+        height: 60px;
+       }
+       
+       .fName,.lName {
+        width: 100%;
+       }
+       .rDiv-Flex {
+        flex-direction: column;
+        height: 150px;
+       
+       }
+
+       .email-div {
+        margin-top: 0;
+       }
+
+       
+       .email-div input {
+        height: 60px;
+       } 
+      
+       .rDiv {
+        width: 100%; 
+       }
+       
+
+       .message {
+        width: 90%;
+        margin-top: 100px;
+       }
+       
+       .consent {
+        margin-top:  0;
+       }
+       
+       button {
+        margin-top: 0;
+       }
+      
+}
+
+@media (max-width:380px) and (min-width:200px) {
+    body {
+     height: 200vh;
+    }
+    form {
+    width: 90%;
+    height: 160vh;
+    margin-left: 25px;
+    }
+
+    .field {
+     height: 100%;
+     width: 100px;
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     display: flex;
+     justify-content: flex-start;
+       
+    }
+       
+    .name-div {
+     flex-direction: column;
+    }
+
+       .name-div input {
+        height: 60px;
+       }
+       
+       .fName,.lName {
+        width: 100%;
+       }
+       .rDiv-Flex {
+        flex-direction: column;
+        height: 150px;
+       
+       }
+
+       .email-div {
+        margin-top: 0;
+        margin-bottom: 0;
+       }
+
+       
+       .email-div input {
+        height: 60px;
+       } 
+      
+       .rDiv {
+        width: 100%; 
+       }
+       
+
+       .message {
+        width: 90%;
+        margin-top: 100px;
+       }
+       
+       .consent {
+        margin-top:  0;
+       }
+       
+       button {
+        margin-top: 0;
+       }
+      
+       
+}
