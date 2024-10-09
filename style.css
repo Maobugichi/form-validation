@@ -63,7 +63,7 @@ form {
 
 @keyframes showUp {
  from {transform: translateY(-100px);}
- to {transform: translateY(30px); }
+ to {transform: translateY(80px); }
 }
 
 .deanimate {
@@ -256,8 +256,8 @@ fieldset {
 }
 @media (max-width:600px) and (min-width:350px) {
     body {
-      height: 170vh;
-      min-height: 140vh;
+      height: 155vh;
+      min-height: 150vh;
     }
     .animate {
         display: block;
